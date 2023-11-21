@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="/img/formulario.png">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<title>Formulario de Registro de Clientes</title>
+
+</head>
+<body>
+
+
+	<div class="big">
+
+
+    <div>
+        <ul class="menu">
+            <li><a data-target="#inicio" href="#">Inicio</a></li>
+            <li><a data-target="#registro" href="#">Registrar clientes</a></li>
+            <li><a data-target="#lista" href="#">Ver Lista</a></li>
+			<li><a data-target="#registrado" href="#"></a></li>
+        </ul>
+    </div>
+
+	<div data-content id="inicio" class="active">
+		<h1>Bienvenidos</h1>
+		<input data-target="#registro" class="botons" type="submit" value="Registrarse">
+	</div>
+
+	<div data-content id="registrado"  class="registrado">
+		<h1>YA USTED HA SIDO REGISTRADO</h1>
+		<p>Registrado ya puede ver la lista de los clientes</p>
+		<input data-target="#lista" class="botons" type="submit" value="Ver Lista">
+	</div>
+
+
+<div class="registro">
+    <div data-content id="registro">
+
+
+	<h1>Registro de clientes</h1>
+
+	<section class="form-register">
+		<h4>Formulario Registro</h4>
+		<input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+		<input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+		<input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+		<input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
+		<input data-target="#registrado" class="botons" type="submit" value="Registrar">
+		<input data-target="#inicio" class="botons" type="submit" value="Cancelar">
+	</section>
+</div>
+</div>
+
+
+
+
+	<div class="lista">
+        <div data-content id="lista">
+
+        <h2>Lista de Clientes</h2>
+
+		<table>
+			<thead>
+				<tr>
+					<th>Nombre</th>
+					<th>Apellido</th>
+					<th>Dirección</th>
+					<th>Correo electrónico</th>
+					<th>Teléfono</th>
+					<th>eliminar</th>
+					<th>editar</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Carlos</td>
+					<td>Martinez</td>
+					<td>Arjona</td>
+					<td>carlosmartinez00@gmail.com</td>
+					<td>3022041942</td>
+					<td><img src="img/yu.svg" alt=""></td>
+					<td><img src="img/edi.svg" alt=""></td>
+
+				</tr>
+				<tr>
+					<td>Iran</td>
+					<td>De Aguas</td>
+					<td>Cartagena</td>
+					<td>iran029@gmail.com</td>
+					<td>3022456242</td>
+					<td><img src="img/yu.svg" alt=""></td>
+					<td><img src="img/edi.svg" alt=""></td>
+
+				</tr>
+		</table>
+
+		<div class="btn">
+		<input data-target="#inicio" class="botons-1" type="submit" value="Salir">
+		<input data-target="#registro" class="botons" type="submit" value="Nuevo">
+	</div>
+        </div>
+
+
+        </div>
+
+    </div>
+
+<script src="js/api.js"></script>
+</body>
+</html>
